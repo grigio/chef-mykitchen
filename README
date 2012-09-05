@@ -1,0 +1,5 @@
+An example project using Chef Solo, Knife Solo, Librarian and Vagrant
+
+  knife cook vagrant@alpha.virt
+
+(After You set up an environment like this: http://grigio.org/chef_solo_knife_vagrant_and_other_tools_simulate_production_environment_system_monitoring )
