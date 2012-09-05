@@ -13,11 +13,11 @@
 //  "recipe[rvm::system]",
 //  "recipe[users]"
     "recipe[users::sysadmins]"
-    // ,"recipe[nginx]"
-    // ,"recipe[postgresql]"
-    // ,"recipe[postgresql::server]"
-    // ,"recipe[postgresql::postgis]"
-    // ,"recipe[alpha-tweaks]"
+    //,"recipe[nginx]" // Sorry an It's dep seems broken (ohai), but it worked! Cannot find a resource for apt_repository on ubuntu version 12.04
+    ,"recipe[postgresql]"
+    ,"recipe[postgresql::server]"
+    ,"recipe[postgresql::postgis]"
+    ,"recipe[alpha-tweaks]"
      
   ]
 }
