@@ -1,0 +1,24 @@
+#!/usr/bin/env ruby
+#^syntax detection
+
+# opscode official
+site 'http://community.opscode.com/api/v1'
+
+#cookbook 'apt'
+cookbook 'chef-solo-search',
+  :git => "https://github.com/edelight/chef-solo-search.git"
+cookbook 'users',
+  :git => "https://github.com/opscode-cookbooks/users.git", :ref => '9aaaddc'
+
+
+
+cookbook 'nginx',
+  :git => 'https://github.com/gevans/chef-nginx.git', :ref => 'stable-ppa'
+
+# github recipes
+cookbook 'postgresql',
+  :git => 'https://github.com/phlipper/chef-postgresql.git'
+
+# myserver app custom
+#cookbook 'custom',
+#  :path => 'site-cookbooks'

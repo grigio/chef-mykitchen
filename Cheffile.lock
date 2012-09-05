@@ -1,0 +1,46 @@
+SITE
+  remote: http://community.opscode.com/api/v1
+  specs:
+    bluepill (1.1.0)
+    build-essential (1.1.0)
+    ohai (1.0.2)
+    runit (0.15.0)
+
+GIT
+  remote: https://github.com/edelight/chef-solo-search.git
+  ref: master
+  sha: 83fd5c5da1d32f53dba782cafaf8fad9f17b76a8
+  specs:
+    chef-solo-search (0.4.0)
+
+GIT
+  remote: https://github.com/gevans/chef-nginx.git
+  ref: stable-ppa
+  sha: 22576b4fbdecdc28a736595be5a6e60753495890
+  specs:
+    nginx (0.101.1)
+      bluepill (>= 0.0.0)
+      build-essential (>= 0.0.0)
+      ohai (~> 1.0.2)
+      runit (>= 0.0.0)
+
+GIT
+  remote: https://github.com/opscode-cookbooks/users.git
+  ref: 9aaaddc
+  sha: 9aaaddc230e80ce280409fe092f669c45b19e7ac
+  specs:
+    users (1.1.2)
+
+GIT
+  remote: https://github.com/phlipper/chef-postgresql.git
+  ref: master
+  sha: 33f598cd2d6681c6f1a8ef2c0f2edc992c9a731c
+  specs:
+    postgresql (0.3.0)
+
+DEPENDENCIES
+  chef-solo-search (>= 0)
+  nginx (>= 0)
+  postgresql (>= 0)
+  users (>= 0)
+

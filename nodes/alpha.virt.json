@@ -1,0 +1,23 @@
+{
+  "nginx": {
+     "install_method": "ppa"
+    ,"init_style"    : "bluepill"
+  }
+
+  ,"postgresql": {
+    "version": "9.1"
+    ,"ssl"   : "false"
+  }
+
+  ,"run_list": [
+//  "recipe[rvm::system]",
+//  "recipe[users]"
+    "recipe[users::sysadmins]"
+    // ,"recipe[nginx]"
+    // ,"recipe[postgresql]"
+    // ,"recipe[postgresql::server]"
+    // ,"recipe[postgresql::postgis]"
+    // ,"recipe[alpha-tweaks]"
+     
+  ]
+}
